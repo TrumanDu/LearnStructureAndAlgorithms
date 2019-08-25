@@ -127,7 +127,7 @@ public class LinkedTest {
             quick = quick.next;
         }
         LinkNode slow = node;
-        while (quick.next != null) {
+        while (quick != null && quick.next != null) {
             quick = quick.next;
             slow = slow.next;
         }
