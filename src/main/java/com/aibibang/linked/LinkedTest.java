@@ -19,7 +19,13 @@ public class LinkedTest {
         }
     }
 
-    //实现两个有序的链表合并为一个有序链表
+    /**
+     * 实现两个有序的链表合并为一个有序链表
+     *
+     * @param node1
+     * @param node2
+     * @return
+     */
     public LinkNode merge(LinkNode node1, LinkNode node2) {
         if (node1 == null) {
             return node2;
@@ -50,7 +56,12 @@ public class LinkedTest {
         return temp.next;
     }
 
-    //单链表反转
+    /**
+     * 单链表反转
+     *
+     * @param node
+     * @return
+     */
     public LinkNode revert(LinkNode node) {
         LinkNode pre = null;
         LinkNode current = node;
@@ -63,29 +74,66 @@ public class LinkedTest {
         return pre;
     }
 
-    // 链表中环的检测
+    /**
+     * 链表中环的检测
+     * 快慢指针法
+     *
+     * @param node
+     * @return
+     */
     public boolean isLoopNode(LinkNode node) {
-        //TODO
+
+        if (node == null || node.next == null) {
+            return false;
+        }
+        LinkNode quick = node.next.next;
+        LinkNode slow = node.next;
+        while (quick != null && quick.next != null && slow != null) {
+            if (quick.data == slow.data || quick.next.data == slow.data) {
+                return true;
+            }
+            quick = quick.next.next;
+            slow = slow.next;
+        }
         return false;
     }
 
-    //查找中间节点
+    /**
+     * 查找中间节点
+     *
+     * @param node
+     * @return
+     */
     public LinkNode findMiddleNode(LinkNode node) {
-        //TODO
-        return node;
+        LinkNode quick = node.next.next;
+        LinkNode slow = node.next;
+        while (quick != null && quick.next != null) {
+            quick = quick.next.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
-    //查找倒数第 n 个结点
-    public LinkNode findNNode(LinkNode node) {
-        //TODO
-        return node;
+    /**
+     * 查找倒数第 n 个结点
+     *
+     * @param node
+     * @param n
+     * @return
+     */
+    public LinkNode findNNode(LinkNode node, int n) {
+        LinkNode quick = node;
+        for (int i = 0; i < n - 1; i++) {
+            quick = quick.next;
+        }
+        LinkNode slow = node;
+        while (quick.next != null) {
+            quick = quick.next;
+            slow = slow.next;
+        }
+        return slow;
     }
 
-    //删除链表倒数第 n 个结点
-    public LinkNode deleteNNode(LinkNode node) {
-        //TODO
-        return node;
-    }
 
     public static void main(String[] args) {
         LinkNode node1 = new LinkNode(1);
@@ -109,6 +157,17 @@ public class LinkedTest {
             tempResult = tempResult.next;
         }
 
+
+        System.out.println(linkedTest.isLoopNode(revertResult));
+
+        LinkNode loopNode = new LinkNode(1);
+        loopNode.next = new LinkNode(2);
+        loopNode.next.next = loopNode;
+        System.out.println(linkedTest.isLoopNode(loopNode));
+
+        System.out.println(linkedTest.findMiddleNode(revertResult).data);
+
+        System.out.println(linkedTest.findNNode(revertResult, 4).data);
 
     }
 }
