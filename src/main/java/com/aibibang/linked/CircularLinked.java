@@ -20,6 +20,10 @@ public class CircularLinked {
         }
     }
 
+    public Node getNode(){
+        return this.head;
+    }
+
     public boolean remove(Node node) {
         if (head == null) {
             return false;

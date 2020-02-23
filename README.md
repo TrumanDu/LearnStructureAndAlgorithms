@@ -10,9 +10,9 @@
 - [实现单链表、循环链表、双向链表，支持增删操作](src/main/java/com/aibibang/linked)
 - [实现单链表反转](src/main/java/com/aibibang/linked/SingleLinked.java)
 - [实现两个有序的链表合并为一个有序链表](src/main/java/com/aibibang/linked/SingleLinked.java)
-- 实现求链表的中间结点
-- 链表中环的检测
-- 查找倒数第 n 个结点
+- [实现求链表的中间结点](src/main/java/com/aibibang/linked/SingleLinked.java)
+- [链表中环的检测](src/main/java/com/aibibang/linked/SingleLinked.java)
+- [查找倒数第 n 个结点](src/main/java/com/aibibang/linked/SingleLinked.java)
 
 
 ## 栈
