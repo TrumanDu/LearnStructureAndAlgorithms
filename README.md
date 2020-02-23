@@ -24,9 +24,9 @@
 - [用链表实现一个链式队列](src/main/java/com/aibibang/queue/LinkedQueue.java)
 - [实现一个循环队列](src/main/java/com/aibibang/queue/CircularQueue.java)
 ## 递归
-- 编程实现斐波那契数列求值 f(n)=f(n-1)+f(n-2）
-- 编程实现求阶乘 n!
-- 编程实现一组数据集合的全排列
+- [编程实现斐波那契数列求值 f(n)=f(n-1)+f(n-2）](src/main/java/com/aibibang/algorithms/Recursion.java)
+- [编程实现求阶乘 n!](src/main/java/com/aibibang/algorithms/Recursion.java)
+- [编程实现一组数据集合的全排列](src/main/java/com/aibibang/algorithms/Recursion.java)
 ## 排序
 * 实现归并排序、快速排序、插入排序、冒泡排序、选择排序
 * 编程实现O(n)时间复杂度内找到一组数据的第K大元素
