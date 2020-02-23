@@ -16,9 +16,9 @@
 
 
 ## 栈
-* 用数组实现一个顺序栈
-* 用链表实现一个链式栈
-* 编程模拟实现一个浏览器的前进、后退功能
+* [用数组实现一个顺序栈](src/main/java/com/aibibang/stack/ArrayStack.java)
+* [用链表实现一个链式栈](src/main/java/com/aibibang/stack/LinkedStack.java)
+* [编程模拟实现一个浏览器的前进、后退功能](src/main/java/com/aibibang/stack/Browser.java)
 ## 队列
 - 用数组实现一个顺序队列
 - 用链表实现一个链式队列
