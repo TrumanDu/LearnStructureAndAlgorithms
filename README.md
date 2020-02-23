@@ -20,9 +20,9 @@
 * [用链表实现一个链式栈](src/main/java/com/aibibang/stack/LinkedStack.java)
 * [编程模拟实现一个浏览器的前进、后退功能](src/main/java/com/aibibang/stack/Browser.java)
 ## 队列
-- 用数组实现一个顺序队列
-- 用链表实现一个链式队列
-- 实现一个循环队列
+- [用数组实现一个顺序队列](src/main/java/com/aibibang/queue/ArrayQueue.java)
+- [用链表实现一个链式队列](src/main/java/com/aibibang/queue/LinkedQueue.java)
+- [实现一个循环队列](src/main/java/com/aibibang/queue/CircularQueue.java)
 ## 递归
 - 编程实现斐波那契数列求值 f(n)=f(n-1)+f(n-2）
 - 编程实现求阶乘 n!
