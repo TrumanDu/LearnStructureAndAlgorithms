@@ -1,5 +1,7 @@
 package com.aibibang.linked;
 
+import com.aibibang.linked.node.Node;
+
 /**
  * @author Truman.P.Du
  * @date 2020/02/21
@@ -233,14 +235,5 @@ public class SingleLinked {
         System.out.println(singleLinked.findNthNode(node2, 4).value);
         System.out.println(singleLinked.findNthNode(node2, 5).value);
 
-    }
-}
-
-class Node {
-    public Object value;
-    public Node next;
-
-    public Node(Object value) {
-        this.value = value;
     }
 }

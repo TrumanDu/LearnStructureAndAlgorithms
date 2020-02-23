@@ -1,5 +1,7 @@
 package com.aibibang.linked;
 
+import com.aibibang.linked.node.Node;
+
 /**
  * @author Truman.P.Du
  * @date 2020/02/21

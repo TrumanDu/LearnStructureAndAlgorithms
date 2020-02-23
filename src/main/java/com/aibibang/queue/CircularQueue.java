@@ -6,4 +6,5 @@ package com.aibibang.queue;
  * @description 实现一个循环队列
  */
 public class CircularQueue {
+
 }
