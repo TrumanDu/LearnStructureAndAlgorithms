@@ -41,7 +41,7 @@
 
 ## 字符串
 * [实现一个字符集，只包含a～z这26个英文字母的Trie树](src/main/java/com/aibibang/character/TrieTree.java)
-* 实现朴素的字符串匹配算法
+* [实现朴素的字符串匹配算法](src/main/java/com/aibibang/character/IncludeChar.java)
 
 ## 二叉树
 * 实现一个二叉查找树，并且支持插入、删除、查找操作
