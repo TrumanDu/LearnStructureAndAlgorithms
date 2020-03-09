@@ -36,8 +36,8 @@
 * [实现模糊二分查找算法（比如大于等于给定值的第一个元素）](src/main/java/com/aibibang/algorithms/BinarySearch.java)
 
 ## 散列表
-* 实现一个基于链表法解决冲突问题的散列表
-* 实现一个LRU缓存淘汰算法
+* [实现一个基于链表法解决冲突问题的散列表](src/main/java/com/aibibang/hash/CustomerHashTable.java)
+* [实现一个LRU缓存淘汰算法](src/main/java/com/aibibang/hash/LRUCache.java)
 
 ## 字符串
 * 实现一个字符集，只包含a～z这26个英文字母的Trie树
