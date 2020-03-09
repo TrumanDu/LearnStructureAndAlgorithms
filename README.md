@@ -40,7 +40,7 @@
 * [实现一个LRU缓存淘汰算法](src/main/java/com/aibibang/hash/LRUCache.java)
 
 ## 字符串
-* 实现一个字符集，只包含a～z这26个英文字母的Trie树
+* [实现一个字符集，只包含a～z这26个英文字母的Trie树](src/main/java/com/aibibang/character/TrieTree.java)
 * 实现朴素的字符串匹配算法
 
 ## 二叉树
