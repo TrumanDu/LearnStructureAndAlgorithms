@@ -44,9 +44,9 @@
 * [实现朴素的字符串匹配算法](src/main/java/com/aibibang/character/IncludeChar.java)
 
 ## 二叉树
-* 实现一个二叉查找树，并且支持插入、删除、查找操作
-* 实现查找二叉查找树中某个节点的后继、前驱节点
-* 实现二叉树前、中、后序以及按层遍历
+* [实现一个二叉查找树，并且支持插入、删除、查找操作](src/main/java/com/aibibang/tree/BinaryFindTree.java)
+* [实现查找二叉查找树中某个节点的后继、前驱节点](src/main/java/com/aibibang/tree/BinaryFindTree.java)
+* [实现二叉树前、中、后序以及按层遍历](src/main/java/com/aibibang/tree/Tree.java)
 
 ## 堆
 * 实现一个小顶堆、大顶堆、优先级队列
