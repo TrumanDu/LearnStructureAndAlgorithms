@@ -49,8 +49,8 @@
 * [实现二叉树前、中、后序以及按层遍历](src/main/java/com/aibibang/tree/Tree.java)
 
 ## 堆
-* 实现一个小顶堆、大顶堆、优先级队列
-* 实现堆排序
+* [实现一个小顶堆、大顶堆、优先级队列](src/main/java/com/aibibang/heap/)
+* [实现堆排序](src/main/java/com/aibibang/heap/HeapSort.java)
 * 利用优先级队列合并K个有序数组
 * 求一组动态数据集合的最大Top K
 
