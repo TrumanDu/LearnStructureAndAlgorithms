@@ -61,8 +61,8 @@
 * 实现拓扑排序的Kahn算法、DFS算法
 
 ## 回溯
-* 利用回溯算法求解八皇后问题
-* 利用回溯算法求解0-1背包问题
+* [利用回溯算法求解八皇后问题](src/main/java/com/aibibang/backtrack/Queen.java)
+* [利用回溯算法求解0-1背包问题](src/main/java/com/aibibang/backtrack/Package01.java)
 
 ## 分治
 * [利用分治算法求一组数据的逆序对个数](src/main/java/com/aibibang/algorithms/Divied.java)
