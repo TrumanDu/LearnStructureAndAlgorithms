@@ -46,4 +46,14 @@ public class Divied {
             a[p+i] = tmp[i];
         }
     }
+
+    public static void main(String[] args) {
+        for (int column = 0; column < 8; ++column) {
+            System.out.println(column);
+        }
+
+        for (int column = 0; column < 8; column++) {
+            System.out.println(column);
+        }
+    }
 }

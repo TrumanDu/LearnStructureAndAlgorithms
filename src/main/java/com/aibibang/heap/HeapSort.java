@@ -3,7 +3,8 @@ package com.aibibang.heap;
 /**
  * @author: Truman.P.Du
  * @date: 2020/3/12 22:53
- * @description:
+ * @description: 堆排序的基本思想是：将待排序序列构造成一个大顶堆，此时，整个序列的最大值就是堆顶的根节点。
+ * 将其与末尾元素进行交换，此时末尾就为最大值。然后将剩余n-1个元素重新构造成一个堆，这样会得到n个元素的次小值。如此反复执行，便能得到一个有序序列了
  */
 public class HeapSort {
 
@@ -26,9 +27,9 @@ public class HeapSort {
     public int[] heapify(int[] array, int n, int i) {
         int temp = i;
         while (true) {
-            if (2 * i <= n && array[temp] < array[2 * i]) {
+            if (2 * i <= n && array[i] < array[2 * i]) {
                 temp = 2 * i;
-            } else if (2 * i + 1 <= n && array[temp] < array[2 * i + 1]) {
+            } else if (2 * i + 1 <= n && array[i] < array[2 * i + 1]) {
                 temp = 2 * i + 1;
             } else {
                 break;
