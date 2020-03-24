@@ -143,7 +143,7 @@ public class Sort {
 
         int i = p;
         for (int j = p; j < r; j++) {
-            if (array[i] < array[r]) {
+            if (array[j] < array[r]) {
                 swap(array, i, j);
                 i++;
             }
