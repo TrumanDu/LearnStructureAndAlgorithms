@@ -142,7 +142,7 @@ public class Sort {
     public int partition(int[] array, int p, int r) {
 
         int i = p;
-        for (int j = p; j < r; j++) {
+        for (int j = p; j < r-1; j++) {
             if (array[j] < array[r]) {
                 swap(array, i, j);
                 i++;

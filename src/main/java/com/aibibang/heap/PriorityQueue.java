@@ -20,7 +20,7 @@ public class PriorityQueue {
         count++;
         array[count] = data;
         int i = count;
-        while (i / 2 > 0 && array[i / 2] < array[i]) {
+        while (i / 2 > 1 && array[i / 2] < array[i]) {
             swap(array, i, i / 2);
             i = i / 2;
         }

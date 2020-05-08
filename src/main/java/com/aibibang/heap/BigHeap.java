@@ -29,7 +29,7 @@ public class BigHeap {
         count++;
         datas[count] = data;
         int i = count;
-        while (i / 2 > 0 && datas[i / 2] < datas[i]) {
+        while (i / 2 > 1 && datas[i / 2] < datas[i]) {
             swap(datas, i / 2, i);
             i = i / 2;
         }
@@ -52,14 +52,21 @@ public class BigHeap {
         datas[1] = datas[count];
         --count;
         int i = 1;
-        while ((2 * i <= count && datas[i] < datas[2 * i]) || ((2 * i + 1) <= count && datas[i] < datas[2 * i + 1])) {
-            if (datas[i] < datas[2 * i]) {
-                swap(datas, i, 2 * i);
-                i = 2 * i;
-            } else {
-                swap(datas, i, 2 * i + 1);
-                i = 2 * i + 1;
+        while (2 * i <= count) {
+            //拿left和right最大的节点和父节点交换
+            int temp = datas[2 * i];
+
+            if (2 * i + 1 <= count && datas[temp] < datas[2 * i + 1]) {
+                temp = 2 * i + 1;
             }
+
+            if (datas[temp] < datas[i]) {
+                break;
+            }
+
+            swap(datas, temp, i);
+            i = temp;
+
         }
 
     }
