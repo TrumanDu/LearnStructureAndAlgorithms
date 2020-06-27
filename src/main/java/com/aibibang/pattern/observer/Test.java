@@ -15,5 +15,6 @@ public class Test {
 
 
         subject.notifyObserver();
+
     }
 }
