@@ -1,4 +1,4 @@
-package com.aibibang.leecode.bfs;
+package com.aibibang.leetcode.bfs;
 
 import java.util.ArrayDeque;
 import java.util.Queue;
