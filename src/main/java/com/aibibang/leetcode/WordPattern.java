@@ -9,6 +9,8 @@ import java.util.Set;
  * @author: Truman.P.Du
  * @date: 2020/8/3 20:45
  * @description:
+ * https://leetcode-cn.com/problems/word-pattern/submissions/
+ * 没有什么好解释的，干就完了
  */
 public class WordPattern {
     public boolean wordPattern(String pattern, String str) {
