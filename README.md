@@ -75,4 +75,4 @@
 * 编程实现一个数据序列的最长递增子序列
 
 ## leecode
-* [146 LRU (最近最少使用) 缓存机制](src/main/java/com/aibibang/leetcode/LRUCache)
+* [146 LRU (最近最少使用) 缓存机制](src/main/java/com/aibibang/leetcode/LRUCache.java)
