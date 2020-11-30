@@ -54,7 +54,7 @@ public class BigHeap {
         int i = 1;
         while (2 * i <= count) {
             //拿left和right最大的节点和父节点交换
-            int temp = datas[2 * i];
+            int temp = 2 * i;
 
             if (2 * i + 1 <= count && datas[temp] < datas[2 * i + 1]) {
                 temp = 2 * i + 1;
