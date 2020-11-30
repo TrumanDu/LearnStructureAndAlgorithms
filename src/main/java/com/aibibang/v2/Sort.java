@@ -127,7 +127,8 @@ public class Sort {
         System.out.println("=================selectionSort=================");
         Arrays.stream(sort.selectionSort(new Random().ints(1, 50).distinct().limit(10).toArray())).forEach(i->System.out.println(i));
         System.out.println("=================mergeSort=================");
-        Arrays.stream(sort.mergeSort(new Random().ints(1, 50).distinct().limit(10).toArray())).forEach(i->System.out.println(i));
+        int[] array = new Random().ints(1, 50).distinct().limit(10).toArray();
+        Arrays.stream(sort.mergeSort(array)).forEach(i->System.out.println(i));
 
     }
 }
