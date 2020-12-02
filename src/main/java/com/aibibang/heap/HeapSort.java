@@ -24,7 +24,7 @@ public class HeapSort {
     }
 
 
-    public int[] heapify(int[] array, int n, int i) {
+    public void heapify(int[] array, int n, int i) {
         int temp = i;
         while (true) {
             if (2 * i <= n && array[i] < array[2 * i]) {
@@ -37,7 +37,6 @@ public class HeapSort {
             swap(array, i, temp);
             i = temp;
         }
-        return array;
     }
 
     private void swap(int[] array, int i, int j) {

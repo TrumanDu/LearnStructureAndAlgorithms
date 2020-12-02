@@ -98,12 +98,43 @@ public class Sort {
      * @return
      */
     public int[] quickSort(int[] wait2SortArray){
-
+         quick(wait2SortArray,0,wait2SortArray.length-1);
         return wait2SortArray;
+    }
+
+    public void quick(int[] array,int p,int q){
+        if(p>=q){
+            return;
+        }
+        int partition = partition(array,p,q);
+        quick(array,p,partition-1);
+        quick(array,partition+1,q);
+    }
+
+
+    public int partition(int[] array,int p,int q){
+
+        int i = p;
+
+        for (int j = p; j < q; j++) {
+            if(array[j]<array[q]){
+                swap(array,i,j);
+                i++;
+            }
+        }
+        swap(array,i,q);
+        return i;
     }
 
     /**
      * 堆排序
+     * a.将无需序列构建成一个堆，根据升序降序需求选择大顶堆或小顶堆;
+     *
+     * b.将堆顶元素与末尾元素交换，将最大元素"沉"到数组末端;
+     *
+     * c.重新调整结构，使其满足堆定义，然后继续交换堆顶元素与当前末尾元素，反复执行调整+交换步骤，直到整个序列有序。
+     *
+     * https://www.cnblogs.com/chengxiao/p/6129630.html
      * @param wait2SortArray
      * @return
      */
@@ -123,12 +154,13 @@ public class Sort {
     public static void main(String[] args) {
         Sort sort = new Sort();
         System.out.println("=================bubbleSort=================");
-        Arrays.stream(sort.bubbleSort(new Random().ints(1, 50).distinct().limit(10).toArray())).forEach(i->System.out.println(i));
+        System.out.println(Arrays.toString(sort.bubbleSort(new Random().ints(1, 50).distinct().limit(10).toArray())));
         System.out.println("=================selectionSort=================");
-        Arrays.stream(sort.selectionSort(new Random().ints(1, 50).distinct().limit(10).toArray())).forEach(i->System.out.println(i));
+        System.out.println(Arrays.toString(sort.selectionSort(new Random().ints(1, 50).distinct().limit(10).toArray())));
         System.out.println("=================mergeSort=================");
         int[] array = new Random().ints(1, 50).distinct().limit(10).toArray();
-        Arrays.stream(sort.mergeSort(array)).forEach(i->System.out.println(i));
-
+        System.out.println(Arrays.toString(sort.mergeSort(array)));
+        System.out.println("=================quickSort=================");
+        System.out.println(Arrays.toString(sort.quickSort(new Random().ints(1, 50).distinct().limit(10).toArray())));
     }
 }
