@@ -129,18 +129,45 @@ public class Sort {
     /**
      * 堆排序
      * a.将无需序列构建成一个堆，根据升序降序需求选择大顶堆或小顶堆;
-     *
+     * 从最后一个非叶子节点开始n/2-1（如果堆数组是从下标1开始则为n/2）
      * b.将堆顶元素与末尾元素交换，将最大元素"沉"到数组末端;
      *
      * c.重新调整结构，使其满足堆定义，然后继续交换堆顶元素与当前末尾元素，反复执行调整+交换步骤，直到整个序列有序。
      *
-     * https://www.cnblogs.com/chengxiao/p/6129630.html
+     * 因为下表是从0开始，i 左子节点2*i+1 右子节点2*i+2
+     *
      * @param wait2SortArray
      * @return
      */
     public int[] heapSort(int[] wait2SortArray){
-
+        int n = wait2SortArray.length;
+        for (int i = n/2-1; i >=0; i--) {
+               heapfiy(wait2SortArray,n,i);
+        }
+        while (n>0){
+            n--;
+            swap(wait2SortArray,0,n);
+            heapfiy(wait2SortArray,n,0);
+        }
         return wait2SortArray;
+    }
+
+    private void heapfiy(int[] array,int n,int i){
+           while (true){
+               int max = i;
+               if((2*i+1)<n&&array[2*i+1]>array[i]){
+                   max = 2*i+1;
+               }
+
+               if((2*i+2)<n&&array[2*i+2]>array[i]){
+                   max = 2*i+2;
+               }
+
+               if(max ==i){
+                   break;
+               }
+               swap(array,i,max);
+           }
     }
 
 
@@ -162,5 +189,7 @@ public class Sort {
         System.out.println(Arrays.toString(sort.mergeSort(array)));
         System.out.println("=================quickSort=================");
         System.out.println(Arrays.toString(sort.quickSort(new Random().ints(1, 50).distinct().limit(10).toArray())));
+        System.out.println("=================heapSort=================");
+        System.out.println(Arrays.toString(sort.heapSort(new Random().ints(1, 50).distinct().limit(10).toArray())));
     }
 }
