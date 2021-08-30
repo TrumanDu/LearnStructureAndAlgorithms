@@ -28,6 +28,10 @@ public class Bean {
                 '}';
     }
 
+    public static Builder builder(){
+        return new Builder();
+    }
+
     static class Builder {
         private String a;
         private String b;
