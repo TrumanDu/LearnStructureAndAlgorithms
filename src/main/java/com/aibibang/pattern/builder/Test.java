@@ -7,7 +7,7 @@ package com.aibibang.pattern.builder;
  */
 public class Test {
     public static void main(String[] args) {
-        Bean bean = new Bean.Builder().a("a").b("b").c("c").build();
+        Bean bean = Bean.builder().a("a").b("b").c("c").build();
         System.out.println(bean.toString());
     }
 }
